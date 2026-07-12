@@ -16,7 +16,7 @@ changed.
 
 ## Safety model
 
-This is a behavioral port of Peng Xiong's MIT-licensed Logseq Plugin Bullet
+This is a behavioral port of Peng Xiao's MIT-licensed Logseq Plugin Bullet
 Threading, pinned to the source revision recorded in `manifest.json`. It is a
 declarative visual plugin: it requests Tine's built-in
 `thread-lines` decoration, and Tine draws the connectors. The plugin cannot
