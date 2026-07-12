@@ -21,7 +21,8 @@ Threading, pinned to the source revision recorded in `manifest.json`. It is a
 declarative visual plugin: it requests Tine's built-in
 `thread-lines` decoration, and Tine draws the connectors. The plugin cannot
 inject CSS, run browser code, access files or the network, or read or write graph
-data.
+data. Tine applies these two host-rendered settings directly; the guest receives
+activation/settings events but no block snapshots and returns no effects.
 
 ## Development
 
