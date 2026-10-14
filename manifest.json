@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "page.tine.bullet-threading",
   "name": "Bullet threading",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "apiVersion": "0.2",
   "description": "Draw subtle elbow connectors from parent bullets to their children.",
   "author": "Martin Koutecký",
@@ -38,6 +38,30 @@
         { "value": "subtle", "label": "Subtle" },
         { "value": "standard", "label": "Standard" }
       ]
+    },
+    {
+      "key": "thickness",
+      "type": "number",
+      "label": "Line thickness",
+      "description": "Thread line thickness in pixels. Zero hides the lines.",
+      "default": 1,
+      "min": 0,
+      "max": 10,
+      "step": 0.5
+    },
+    {
+      "key": "color",
+      "type": "color",
+      "label": "Thread color",
+      "description": "Leave empty to use the current theme accent, or choose a custom color.",
+      "default": ""
+    },
+    {
+      "key": "color-by-level",
+      "type": "boolean",
+      "label": "Color by hierarchy level",
+      "description": "Use a repeating theme-aware palette for the active ancestry.",
+      "default": false
     }
   ],
   "portedFrom": {
