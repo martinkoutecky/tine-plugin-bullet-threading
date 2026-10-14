@@ -10,4 +10,4 @@ license = "MIT"
 crate-type = ["cdylib"]
 
 [dependencies]
-tine-plugin-sdk = { git = "https://github.com/martinkoutecky/tine", rev = "daabe817fd5b2e53ad0384a207714cfbc752d733" }
+tine-plugin-sdk = { git = "https://github.com/martinkoutecky/tine", rev = "278f71918a949a875fd5807b3a64ba21d775ba63" }

@@ -3,7 +3,7 @@
   "id": "page.tine.bullet-threading",
   "name": "Bullet threading",
   "version": "0.3.0",
-  "apiVersion": "0.2",
+  "apiVersion": "0.3",
   "description": "Draw subtle elbow connectors from parent bullets to their children.",
   "author": "Martin Koutecký",
   "license": "MIT",
