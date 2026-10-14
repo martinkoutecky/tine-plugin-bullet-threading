@@ -10,7 +10,8 @@ nested outlines easier to follow.
 Install **Bullet threading** from **Settings → Plugins**, then enable its toggle.
 The connectors appear immediately throughout the outline. Open the plugin's
 Settings page to choose all nested outlines or only the focused block's ancestry,
-and to choose subtle or standard connector strength. Disable or uninstall
+subtle or standard connector strength, line thickness, a custom color (or the
+theme accent), and per-level hierarchy colors. Disable or uninstall
 the plugin to return to Tine's normal bullet guides; your notes are never
 changed.
 
@@ -21,7 +22,10 @@ Threading, pinned to the source revision recorded in `manifest.json`. It is a
 declarative visual plugin: it requests Tine's built-in
 `thread-lines` decoration, and Tine draws the connectors. The plugin cannot
 inject CSS, run browser code, access files or the network, or read or write graph
-data. Tine applies these two host-rendered settings directly; the guest receives
+data. Tine applies all five settings itself (display, intensity, thickness,
+color, color by level): it validates each value against the manifest's declared
+type and bounds, accepts only literal colors, and turns them into the decoration's
+style. The guest receives
 activation/settings events but no block snapshots and returns no effects.
 
 ## Development
